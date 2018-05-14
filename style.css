@@ -1,0 +1,40 @@
+div.box {
+	display: flex;
+	justify-content: center;
+}
+
+#toggle-1,
+#toggle-2,
+#toggle-3,
+#toggle-4,
+#toggle-5,
+#toggle-6 {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	margin: 10px;
+}
+
+#toggle-1 {
+	background-color: #696969;
+}
+
+#toggle-2 {
+	background-color: #2f4f4f;
+}
+
+#toggle-3 {
+	background-color: #ff7f50;
+}
+
+#toggle-4 {
+	background-color: #4b0080;
+}
+
+#toggle-5 {
+	background-color: #adff2f;
+}
+		
+#toggle-6 {
+	background-color: #ff69b4;
+}

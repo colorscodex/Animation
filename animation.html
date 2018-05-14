@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Name move</title>
+		<meta name="description" content="">
+		<link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
+
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+
+
+		<script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+
+
+		
+	</head>
+	<style>
+
+		div.box {
+    		display: flex;
+    		justify-content: center;
+  		}
+
+
+		#toggle-1,
+		#toggle-2,
+		#toggle-3,
+		#toggle-4,
+		#toggle-5,
+		#toggle-6 {
+    		width: 50px;
+    		height: 50px;
+    		border-radius: 50%;
+    		margin: 10px;
+  		}
+
+  		#toggle-1 {
+			background-color: #696969; 
+		}
+
+  		#toggle-2 {
+			background-color: #2f4f4f;
+		}
+
+		#toggle-3 {
+			background-color: #ff7f50; 
+		}
+
+		#toggle-4 {
+			background-color: #4b0080;
+		}
+
+		#toggle-5 {
+			background-color: #adff2f;
+		}
+		
+		#toggle-6 {
+			background-color: #ff69b4;
+		}
+
+
+
+  	</style>
+	<body>
+		<h1>Click anywhere to toggle the circles.</h1>
+		<div class="box">
+			<div id="toggle-1"></div>
+			<div id="toggle-2"></div>
+			<div id="toggle-3"></div>
+			<div id="toggle-4"></div>	
+			<div id="toggle-5"></div>	
+			<div id="toggle-6"></div>	
+		</div>
+
+		<p></p>
+
+		<script>
+		//selector.effect( "bounce", {arguments}, speed );
+		/*
+			direction − The direction of the effect. Can be "up", "down", "left", "right". Default is "up".
+
+    		distance − Distance to bounce. Default is 20
+
+    		mode: The mode of the effect. Can be "show", "hide" or "effect". Default is "effect".
+
+    		times − Times to bounce. Default is 5.
+		*/
+
+		$(document).ready(() => {
+
+
+			$(document).click(() => {
+
+				// $("div.box").children().toggle( "bounce", { times: 5 }, "slow"); // up/down and hidden
+
+  				
+  				$( "#toggle-1" ).effect( "bounce", { times: 3 }, "slow").toggle( "bounce", { times: 3 }, "slow");
+  				$( "#toggle-2" ).effect( "bounce", { times: 6 }, "slow");
+				$( "#toggle-3" ).effect( "bounce", { times: 27 }, "slow");
+				$( "#toggle-4" ).effect( "bounce", { times: 9}, "slow");
+				$( "#toggle-5" ).effect( "bounce", { times: 6 }, "slow");
+  				$( "#toggle-6" ).effect( "bounce", { times: 3 }, "slow");				
+				});
+
+		});
+		// Change the text between the quotation marks and run your code to see your name animated!
+			/*
+			drawName('Susana');
+
+			var red = [0, 100, 63];
+			var orange = [40, 100, 60];
+			var green = [75, 100, 40];
+			var blue = [196, 77, 55];
+			var purple = [280, 50, 60];
+
+			var message = 'Change the message!';
+
+
+			// Letters in the message will cycle through these colors:
+			var letterColors = [red, orange, green, blue, purple];
+
+			var message = 'Multiple colors!';
+
+			drawName(message, letterColors);
+			bounceBubbles();
+
+			drawName(message, orange);
+
+			*/
+
+		// The code below will allow you to interact with the letters
+			//bounceBubbles();
+/*Three variables let you experiment with the animation physics: mouseResponseThreshold, friction, and rotationForce.
+
+mouseResponseThreshold affects how close the mouse pointer needs to be to affect the dots that make up the letters. The larger the number, the more powerful the effect of the mouse interaction. Experiment with changing the mouseResponseThreshold to different numbers and running your code!
+*/
+
+			// This variable controls the smallest distance at which a mouse will 
+// mouseResponseThreshold = 50;
+
+// This variable controls how strongly the dots will try to return to their starting position
+// friction = 0.85;
+
+// This variable controls how much the dots will rotate when interacting
+// rotationForce = 0.0;
+
+
+  
+
+
+
+
+		</script>
+	</body>
+</html>
